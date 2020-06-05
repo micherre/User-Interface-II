@@ -1,1 +1,270 @@
-/* Add CSS styling here */
+/* Add CSS styling here *//* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+*{
+    font-size: 62.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: rgba(207, 224, 241, 0.658);
+}
+.headernav{
+    width: 100%;
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    margin: 1rem .4rem;
+    padding: .8rem .2rem;
+    background-color: rgba(64,139,173, 0.3);
+}
+.headernav nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+    height: 90%;
+    background-color: rgba(64,139,173, 0.2);
+    border-radius: 4px;
+}
+nav a{
+    text-decoration: none;
+    background-color: rgba(64, 139, 173, 0.6);
+    color: mintcream;
+    padding: .65rem .9rem;
+    border-radius: 8px;
+}
+.headerfull {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 4px solid grey;
+    border-left: 4px solid grey;
+    align-content: center;
+    width: 100%;
+}
+/*nav a:hover{
+    display:flex;
+    align-items: flex-end;
+}*/
+h1{
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 1rem 0rem 0rem 0rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .15rem;
+}
+h2{
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Bold', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .15rem;
+}
+.headerfull p{
+   /* border: 1px solid brown;*/
+    width: 100%;
+    margin: 1rem rem 1rem 3rem;;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .15rem;
+}
+.headerphoto{
+    width: 100%;
+    object-fit: cover;
+    border-left: 4px solid grey;
+}
+.headerphoto img{
+    height: 300px;
+    width: 100%;
+    opacity: .6;
+}
+.headerphoto img:hover{
+    opacity: .5;
+}
+.orangeblock{
+    border: 2px solid orange;
+    width: 1.2%;
+    opacity: .8;
+}
+.orangeline{
+    border:2px solid orange;
+    height: .5%;
+    width: 100%;
+    position: absolute;
+    background-color: orange;
+    opacity: .65;
+}
+.art{
+    width: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.art img{
+    height: 400px;
+    width: 100%;
+}
+.art img:hover{
+    opacity: .65%;
+}
+.cooking{
+    width: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.cooking img{
+    height: 400px;
+    width: 100%;
+}
+.cooking img:hover{
+    opacity: .65%;
+}
+.rowing{
+    width: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.rowing img{
+    height: 400px;
+    width: 100%;
+}
+.rowing img:hover{
+    opacity: .9%;
+}
+.climbing{
+    width: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.climbing img{
+    height: 400px;
+    width: 100%;
+}
+.rowing img:hover{
+    opacity: .65%;
+}
+.mainimgcontainer{
+    border-left: 4px solid grey;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-between;
+}
+.mainimgtext{
+    width: 20%;
+    margin: .5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*float: right;
+    margin: 1rem;
+    text-align: inline-block;*/
+}
+.footer{
+    /*border: 2px solid red;*/
+    height: 10rem;
+    background-color: rgba(64,139,173, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid grey;
+}
+.contactbutton{
+    border: 2px solid orange;
+    width: 10%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .15rem;
+}
+#orangeright{
+    border: 4.5px solid orange;
+    position: absolute;
+    width: 55%;
+    text-align: end;
+    opacity: .8
+}
+.orangerightbox{
+    width:100%;
+    height: 1.5rem;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+#orangeright2{
+    border: 2px solid orange;
+    position: absolute;
+    width: 30%;
+    text-align: end;
+    opacity: .8
+}
+.orangerightbox2{
+    width:100%;
+    height: 2.3rem;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+#orangeright3{
+    border: 3.5px solid orange;
+    position: absolute;
+    width: 45%;
+    text-align: end;
+    opacity: .8
+}
+.orangerightbox3{
+    width:100%;
+    height: 4.7rem;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: transparent;
+}
