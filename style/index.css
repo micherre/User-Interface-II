@@ -50,7 +50,8 @@ table {
     font-size: 62.5%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow-x: hidden;
-    background-color: rgba(207, 224, 241, 0.658);
+    color: rgb(75, 74, 74);
+    /*background-color: rgba(207, 224, 241, 0.658);*/
 }
 .headernav{
     width: 100%;
@@ -75,13 +76,14 @@ nav a{
     color: mintcream;
     padding: .65rem .9rem;
     border-radius: 8px;
+    font-weight: bold;
 }
 .headerfull {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    border-top: 4px solid grey;
-    border-left: 4px solid grey;
+    /*border-top: 4px solid grey;
+    border-left: 4px solid grey;*/
     align-content: center;
     width: 100%;
 }
@@ -94,7 +96,9 @@ h1{
     text-align: center;
     padding: 1rem 0rem 0rem 0rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: .15rem;
+    letter-spacing: .25rem;
+    color: rgb(71, 70, 70);
+    font-weight: bold;
 }
 h2{
     font-size: 1.6rem;
@@ -109,87 +113,95 @@ h2{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: .15rem;
+    line-height: 1.6rem;
 }
 .headerphoto{
     width: 100%;
     object-fit: cover;
-    border-left: 4px solid grey;
+   /* border-left: 4px solid grey;*/
 }
 .headerphoto img{
     height: 300px;
     width: 100%;
     opacity: .6;
+    border-radius: 15px;
+    margin: 1rem;
 }
 .headerphoto img:hover{
     opacity: .5;
 }
 .orangeblock{
-    border: 2px solid orange;
+    border: 2px solid rgb(8, 136, 221);
     width: 1.2%;
     opacity: .8;
 }
 .orangeline{
-    border:2px solid orange;
-    height: .5%;
+    border:2px solid rgb(8, 136, 221);
+    height: .4%;
     width: 100%;
     position: absolute;
-    background-color: orange;
+    background-color:  rgba(64,139,173, 0.3);
     opacity: .65;
 }
 .art{
-    width: 200px;
+    width: 11.5rem;
     object-fit: cover;
     margin-bottom: 1rem;
+    width: 19%;
 }
 .art img{
-    height: 400px;
+    height: 25rem;
     width: 100%;
 }
 .art img:hover{
     opacity: .65%;
 }
 .cooking{
-    width: 200px;
+    width: 11.5rem;
     object-fit: cover;
     margin-bottom: 1rem;
+    width: 19%;
 }
 .cooking img{
-    height: 400px;
+    height: 25rem;
     width: 100%;
 }
 .cooking img:hover{
     opacity: .65%;
 }
-.rowing{
-    width: 200px;
+.rowing {
+    width: 11.5rem;
     object-fit: cover;
     margin-bottom: 1rem;
+    width: 19%;
 }
 .rowing img{
-    height: 400px;
+    height: 25rem;
     width: 100%;
 }
 .rowing img:hover{
     opacity: .9%;
 }
 .climbing{
-    width: 200px;
+    width: 11.5rem;
     object-fit: cover;
     margin-bottom: 1rem;
+    width: 19%;
 }
 .climbing img{
-    height: 400px;
+    height: 25rem;
     width: 100%;
 }
-.rowing img:hover{
+.climbing img:hover{
     opacity: .65%;
 }
 .mainimgcontainer{
-    border-left: 4px solid grey;
+    /*border-left: 4px solid grey;*/
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
+    width: 100%;
     justify-content: space-between;
+    margin-left: 1rem;
 }
 .mainimgtext{
     width: 20%;
@@ -207,11 +219,11 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 2px solid grey;
+    /*border-left: 2px solid grey;*/
 }
 .contactbutton{
-    border: 2px solid orange;
-    width: 10%;
+    border: .2rem solid rgb(8, 136, 221);
+    width: 7rem;
     height: 20%;
     display: flex;
     align-items: center;
@@ -219,9 +231,13 @@ h2{
     border-radius:8px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: .15rem;
+    font-weight: bold;
+    background-color: white;
+    flex-wrap: wrap;
+    text-align: center;
 }
 #orangeright{
-    border: 4.5px solid orange;
+    border: .35rem solid  rgba(64,139,173, 0.3);
     position: absolute;
     width: 55%;
     text-align: end;
@@ -229,7 +245,7 @@ h2{
 }
 .orangerightbox{
     width:100%;
-    height: 1.5rem;
+    height: 1.1rem;
     position: absolute;
     display: flex;
     align-items: flex-end;
@@ -237,7 +253,7 @@ h2{
     background-color: transparent;
 }
 #orangeright2{
-    border: 2px solid orange;
+    border: .15rem solid   rgba(64,139,173, 0.3);
     position: absolute;
     width: 30%;
     text-align: end;
@@ -253,7 +269,7 @@ h2{
     background-color: transparent;
 }
 #orangeright3{
-    border: 3.5px solid orange;
+    border: .25rem solid  rgb(8, 136, 221, .4);
     position: absolute;
     width: 45%;
     text-align: end;
@@ -261,10 +277,178 @@ h2{
 }
 .orangerightbox3{
     width:100%;
-    height: 4.7rem;
+    height: 4.5rem;
     position: absolute;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     background-color: transparent;
-}/* Add CSS styling here */
+}
+ /*.container {
+    width: 1000px;
+    margin: 0 auto;
+ }    */
+
+ @media (max-width: 800px){
+    .headernav nav{
+        width: 90%;
+        height: 95%;
+    }
+    nav a{
+        padding: 1rem 1.6rem;
+        font-size: 1.3rem;
+    }
+    .rowing{
+        width: 22%;
+    }
+    .climbing{
+        width: 22%;
+    }
+    .cooking{
+        width: 22%;
+    }
+    .art{
+        width: 22%;
+    }
+    .mainimgtext{
+        width: 100%;
+        height: auto;
+    }
+    .mainimgtext ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .arttext{
+        width: 22%;
+    }
+    .cooktext{
+        width: 22%;
+    }
+    .rowtext{
+        width: 22%;
+    }
+    .climbtext{
+        width: 22%;
+    }
+    .climbing img{
+        height: 20rem;
+    }
+    .rowing img{
+        height: 20rem;
+    }
+    .cooking img{
+        height: 20rem;
+    }
+    .art img{
+        height: 20rem;
+    }
+ }
+ @media (max-width: 750px){
+    .climbing{
+        width: 23%;
+    }
+    .rowing{
+        width: 23%;
+    }
+    .cooking{
+        width: 23%;
+    }
+    .art{
+        width: 23%;
+ }
+ .arttext{
+    width: 23%;
+}
+.cooktext{
+    width: 23%;
+}
+.rowtext{
+    width: 23%;
+}
+.climbtext{
+    width: 23%;
+}
+ }
+ @media(max-width:650px){
+    .climbing img{
+        height: 15rem;
+    }
+    .rowing img{
+        height: 15rem;
+    }
+    .cooking img{
+        height: 15rem;
+    }
+    .art img{
+        height: 15rem;
+    }
+    nav a{
+        padding: 1rem 1.3rem;
+        font-size: 1.1rem;
+    }
+ }
+ @media(max-width:500px){
+     .headernav nav{
+         flex-direction: column;
+         width: 25%;
+         background-color: none;
+         height: 100%;
+         align-items: center;
+         border-radius: 12px;
+     }
+    .headernav nav a{
+        
+        margin: .25rem;
+        width: 3rem;
+        text-align: stretch;
+     }
+     .climbing{
+        width: 48%;
+    }
+    .rowing{
+        width: 48%;
+    }
+    .cooking{
+        width: 48%;
+    }
+    .art{
+        width: 48%;
+    }
+    .climbing img{
+        height: 23rem;
+    }
+    .rowing img{
+        height: 23rem;
+    }
+    .cooking img{
+        height: 23rem;
+    }
+    .art img{
+        height: 23rem;
+    }
+    .mainimgtext ul{
+        flex-direction: column;
+        justify-content: space-between;
+        }
+        .arttext{
+            width: 100%;
+        }
+        .cooktext{
+            width: 100%;
+        }
+        .rowtext{
+            width: 100%;
+        }
+        .climbtext{
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        h1{
+            letter-spacing: .25rem;
+            font-weight:bold;
+        }
+     /*.mainimgcontainer{
+
+     }*/
+ }
