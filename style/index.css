@@ -77,6 +77,8 @@ nav a{
     padding: .65rem .9rem;
     border-radius: 8px;
     font-weight: bold;
+    display: flex;
+    justify-content: stretch;
 }
 .headerfull {
     display:flex;
@@ -233,8 +235,8 @@ h2{
     letter-spacing: .15rem;
     font-weight: bold;
     background-color: white;
-    flex-wrap: wrap;
     text-align: center;
+    cursor: pointer;
 }
 #orangeright{
     border: .35rem solid  rgba(64,139,173, 0.3);
@@ -391,16 +393,18 @@ h2{
  @media(max-width:500px){
      .headernav nav{
          flex-direction: column;
-         width: 25%;
+         width: 100%;
          background-color: none;
          height: 100%;
          align-items: center;
          border-radius: 12px;
+         margin-left: .1rem;
      }
     .headernav nav a{
         
         margin: .25rem;
-        width: 3rem;
+        margin-left: 1rem;
+        width: 100%;
         text-align: stretch;
      }
      .climbing{
